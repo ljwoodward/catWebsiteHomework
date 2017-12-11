@@ -20,9 +20,13 @@ const createCatList = function (cat) {
   catName.innerText = cat.name;
   const catFaveFood = document.createElement('li');
   catFaveFood.innerText = cat.faveFood;
-  // const catUrl = document.createElement('li');
-  // catUrl.innerText
+  const catUrl = document.createElement('li');
+  const catImg = document.createElement('img');
+  catImg.width = 500;
+  catImg.src = cat.url;
+  catUrl.appendChild(catImg);
   uList.appendChild(catName);
   uList.appendChild(catFaveFood);
+  uList.appendChild(catUrl);
   return uList;
 }
