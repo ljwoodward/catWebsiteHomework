@@ -70,4 +70,10 @@ let webList = function (name) {
 }
 
 
-window.onload = app(catArray);
+window.onload = function() {
+  cat1.add();
+  cat2.add();
+  cat3.add();
+  cat4.add();
+  cat5.add();
+}
